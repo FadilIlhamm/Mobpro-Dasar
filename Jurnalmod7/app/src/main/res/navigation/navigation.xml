@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/diaryTrackerFragment"
+   >
+
+    <fragment
+        android:id="@+id/diaryTrackerFragment"
+        android:name="org.d3if4018.jurnalmod7.diaryTracker.DiaryTrackerFragment"
+        android:label="DiaryTrackerFragment" >
+        <action
+            android:id="@+id/action_diaryTrackerFragment_to_diaryFormFragment"
+            app:destination="@id/diaryFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diaryFormFragment"
+        android:name="org.d3if4018.jurnalmod7.diaryForm.DiaryFormFragment"
+        android:label="DiaryFormFragment" />
+</navigation>
